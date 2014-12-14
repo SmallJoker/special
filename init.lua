@@ -61,9 +61,6 @@ end
 if special_is_enabled("plantlike_torch") then
 	dofile(modpath.."/xtorch.lua")
 end
-if special_is_enabled("KUP_stuff") then
-	dofile(modpath.."/KUP_stuff.lua")
-end
 
 minetest.register_alias("special:xtorch", "darkage:lamp")
 minetest.register_alias("mining_plus:air_bottle", "default:gold_ingot")
