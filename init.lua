@@ -35,17 +35,6 @@ if special_is_enabled("moretrees_tweak", "moretrees") and
 		not minetest.registered_nodes["moretrees:willow_stick"] then
 	dofile(modpath.."/moretrees.lua")
 end
-if special_is_enabled("builtin_override") then
-	dofile(modpath.."/builtin_override.lua")
-end
-if special_is_enabled("autoplant_saplings") then
-	if special_is_enabled("builtin_override") then
-		dofile(modpath.."/sapling_planter.lua")
-	else
-		minetest.log("info", ("Could not enable the sapling auto-planter: "..
-				"It depends on the setting special_builtin_override."))
-	end
-end
 if special_is_enabled("obsidian_tools") then
 	dofile(modpath.."/obsidian_tools.lua")
 end

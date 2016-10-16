@@ -1,5 +1,5 @@
-Minetest mod [special]
-======================
+ Minetest mod [special]
+========================
 
 Dependencies:
 	default
@@ -12,30 +12,30 @@ Dependencies:
 	player_notes?
 	wrench?
 
-minetest.conf settings:
------------------------
+ minetest.conf settings
+------------------------
 special_ [..]
 	slap_command		-> "/slap", slaps a player with sounds
-	plant_command		-> "/plant", lets trees grow on dirt (incompatible with MTG)
+	plant_command		-> "/plant", lets trees grow on dirt
 	sign_repair		-> Tool to fix broken signs ("/giveme" required)
 	cleaner_tool		-> Picks up dropped items around you
 	exchange_shop		-> Exchange shop node
 	farming_tweak		-> Adds raw and cooked potatoes and makes other stuff edible
 	grinder			-> Wooden powered grinding node
 	moretrees_tweak	-> Experimental, should not be used yet
-	builtin_override	-> Some changes in the builtin codes..
-	autoplant_saplings	-> Depends on special_builtin_override, plants saplings on unprotected area
 	obsidian_tools		-> Obsidian (pick)axe and shovel
 	chainsaw			-> Requires more than just 1 click to remove a tree
 	moreblocks_tweak	-> Some craft recipes for moreblocks
 	flint			-> Creates fake fire
 	plantlike_torch	-> Some kind of 3D-torch
 	
+The saplings auto-planting function have been moved to:
+https://github.com/SmallJoker/peoplecantlua/blob/master/peoplecantplant/init.lua
 
 
-Authors and licenses:
+ Authors and licenses
 ---------------------
-License for codes: WTFPL
+License for code: WTFPL
 
 Krock (BSD 3-Clause):
 	anytool.png
